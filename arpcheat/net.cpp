@@ -18,4 +18,6 @@ int main(){
 	if(count==1){
 		printf("No interface found!make sure WinPcap is stalled.\n");
 	}
+	//fianlly free any resource
+	pcap_freealldevs(all_devs);
 }
